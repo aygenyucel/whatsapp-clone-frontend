@@ -1,0 +1,63 @@
+.mainContainer {
+  background-color: #f0f2f5;
+  margin: 2em;
+}
+.leftSidebar {
+  background-color: #ffffff;
+}
+
+.profileSetup {
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.leftSidebarBtn {
+  cursor: pointer;
+
+  border-radius: 10%;
+  border: none;
+  align-items: center;
+  background-color: #f0f2f5;
+}
+.leftSidebarBtn:hover {
+  background-color: #cacaca;
+}
+.inputField {
+  display: flex;
+  justify-content: space-between;
+}
+.searchChatInput {
+  border-radius: 10px;
+  border: none;
+  background-color: #f0f2f5;
+  flex-grow: 1;
+  height: 35px;
+  text-align: center;
+}
+.filterBtn {
+  border: none;
+  color: #8796a1;
+  background-color: #ffffff;
+}
+.SingleUser-Time {
+  font-weight: lighter;
+  color: grey;
+}
+.UserName {
+  font-weight: bold;
+}
+.arrowIcon {
+  color: grey;
+  opacity: 0%;
+}
+.singleUser {
+  border-bottom: 5px, lightgray, solid;
+}
+.singleUser:hover .arrowIcon {
+  opacity: 100%;
+  cursor: pointer;
+}
+.singleUser:hover {
+  background-color: #f0f2f5;
+}
