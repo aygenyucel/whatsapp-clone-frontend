@@ -1,8 +1,9 @@
 import { Avatar } from "@mui/material";
 import { Box } from "@mui/system";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import "../mainPage.css";
 
-const SingleUser = () => {
+const SingleUser = (props: any) => {
   return (
     <Box
       className="singleUser"
@@ -12,10 +13,15 @@ const SingleUser = () => {
         justifyContent: "space-between",
       }}
     >
-      <Avatar sx={{ margin: 1 }} src=""></Avatar>
-      <Box sx={{ display: "flex", flexDirection: "column" }}>
-        <div className="UserName">User name</div>
-        <div>blablabla</div>
+      <Box sx={{ display: "flex", alignItems: "center" }}>
+        <Avatar
+          sx={{ margin: 1, height: "50px", width: "50px" }}
+          src={props.avatar}
+        ></Avatar>
+        <div>
+          <div className="singleUserName">{props.name}</div>
+          <div className="singleUserMsg">user messages should go here</div>
+        </div>
       </Box>
       <Box
         sx={{

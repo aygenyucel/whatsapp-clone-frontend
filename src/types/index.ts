@@ -2,7 +2,18 @@ export interface User {
   name: string;
   email: string;
   avatar?: string;
-  _id: string;
+  _id?: string;
+}
+
+export interface RegisterUser {
+  name: string;
+  email: string;
+  password: string;
+}
+
+export interface LoginUser {
+  email: string;
+  password: string;
 }
 
 export interface Chat {
